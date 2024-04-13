@@ -1,0 +1,20 @@
+dependencies: \
+  /Users/joshikvarshik/Documents/unnam/joshik/school/PlanPerfect/ios/Runner/GeneratedPluginRegistrant.m \
+  /Users/joshikvarshik/Documents/unnam/joshik/school/PlanPerfect/ios/Runner/GeneratedPluginRegistrant.h \
+  /Users/joshikvarshik/Documents/unnam/joshik/school/PlanPerfect/ios/build/Debug-iphonesimulator/Flutter.framework/Modules/module.modulemap \
+  /Users/joshikvarshik/Documents/unnam/joshik/school/PlanPerfect/ios/build/Debug-iphonesimulator/Flutter.framework/Headers/FlutterViewController.h \
+  /Users/joshikvarshik/Documents/unnam/joshik/school/PlanPerfect/ios/build/Debug-iphonesimulator/Flutter.framework/Headers/FlutterPluginAppLifeCycleDelegate.h \
+  /Users/joshikvarshik/Documents/unnam/joshik/school/PlanPerfect/ios/build/Debug-iphonesimulator/Flutter.framework/Headers/FlutterHeadlessDartRunner.h \
+  /Users/joshikvarshik/Documents/unnam/joshik/school/PlanPerfect/ios/build/Debug-iphonesimulator/Flutter.framework/Headers/FlutterEngineGroup.h \
+  /Users/joshikvarshik/Documents/unnam/joshik/school/PlanPerfect/ios/build/Debug-iphonesimulator/Flutter.framework/Headers/FlutterEngine.h \
+  /Users/joshikvarshik/Documents/unnam/joshik/school/PlanPerfect/ios/build/Debug-iphonesimulator/Flutter.framework/Headers/FlutterDartProject.h \
+  /Users/joshikvarshik/Documents/unnam/joshik/school/PlanPerfect/ios/build/Debug-iphonesimulator/Flutter.framework/Headers/FlutterCallbackCache.h \
+  /Users/joshikvarshik/Documents/unnam/joshik/school/PlanPerfect/ios/build/Debug-iphonesimulator/Flutter.framework/Headers/FlutterTexture.h \
+  /Users/joshikvarshik/Documents/unnam/joshik/school/PlanPerfect/ios/build/Debug-iphonesimulator/Flutter.framework/Headers/FlutterPlatformViews.h \
+  /Users/joshikvarshik/Documents/unnam/joshik/school/PlanPerfect/ios/build/Debug-iphonesimulator/Flutter.framework/Headers/FlutterCodecs.h \
+  /Users/joshikvarshik/Documents/unnam/joshik/school/PlanPerfect/ios/build/Debug-iphonesimulator/Flutter.framework/Headers/FlutterChannels.h \
+  /Users/joshikvarshik/Documents/unnam/joshik/school/PlanPerfect/ios/build/Debug-iphonesimulator/Flutter.framework/Headers/FlutterBinaryMessenger.h \
+  /Users/joshikvarshik/Documents/unnam/joshik/school/PlanPerfect/ios/build/Debug-iphonesimulator/Flutter.framework/Headers/FlutterPlugin.h \
+  /Users/joshikvarshik/Documents/unnam/joshik/school/PlanPerfect/ios/build/Debug-iphonesimulator/Flutter.framework/Headers/FlutterMacros.h \
+  /Users/joshikvarshik/Documents/unnam/joshik/school/PlanPerfect/ios/build/Debug-iphonesimulator/Flutter.framework/Headers/FlutterAppDelegate.h \
+  /Users/joshikvarshik/Documents/unnam/joshik/school/PlanPerfect/ios/build/Debug-iphonesimulator/Flutter.framework/Headers/Flutter.h

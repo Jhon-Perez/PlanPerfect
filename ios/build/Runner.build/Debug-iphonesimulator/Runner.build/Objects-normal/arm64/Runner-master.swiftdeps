@@ -1,0 +1,6 @@
+version: "Apple Swift version 5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)"
+options: "e97f0c941dfac99823d0d9d9d305176966f85b4c853e072ccee08f1cab0eaaf4"
+build_start_time: [1712985081, 999765872]
+build_end_time: [1712985082, 212666034]
+inputs:
+  "/Users/joshikvarshik/Documents/unnam/joshik/school/PlanPerfect/ios/Runner/AppDelegate.swift": !private [1712970213, 871843814]
