@@ -2,23 +2,24 @@ import 'dart:convert';
 import 'dart:io';
 import 'package:haghocks/backend/openai_prompts.dart';
 import 'package:http/http.dart' as http;
+import 'package:flutter_dotenv/flutter_dotenv.dart' as dotenv;
 
 Future getCompletion(String prompt, String description, bool calendar) async {
-  var apiKey = Platform.environment['OPENAI_API_KEY'];
+  var apiKey = Platform
+      .environment['sk-3lsziSmQigs7oPhLIQGjCT3BlbkFJKPc64RPlBS7IsRrkEcEk7g'];
   var instructions = exerciseInstructions;
   var date = DateTime.now();
-  var completion = calendar ? await _getCompletionFromOpenAI(apiKey!, instructions, prompt, description) :
-                              await _getCalendarCompletion(apiKey!, instructions, prompt, description, date);
+  var completion = !calendar
+      ? await _getCompletionFromOpenAI(
+          apiKey!, instructions, prompt, description)
+      : await _getCalendarCompletion(
+          apiKey!, instructions, prompt, description, date);
   print(completion['choices'][0]['message']['content']);
   return json.decode(completion['choices'][0]['message']['content']);
 }
 
-Future<Map<String, dynamic>> _getCompletionFromOpenAI(
-    String apiKey,
-    String instructions,
-    String prompt,
-    String description
-) async {
+Future<Map<String, dynamic>> _getCompletionFromOpenAI(String apiKey,
+    String instructions, String prompt, String description) async {
   var url = 'https://api.openai.com/v1/chat/completions';
   var headers = {
     'Content-Type': 'application/json',
@@ -28,12 +29,15 @@ Future<Map<String, dynamic>> _getCompletionFromOpenAI(
     "model": "gpt-3.5-turbo",
     "messages": [
       {"role": "system", "content": instructions},
-      {"role": "user", "content": """
+      {
+        "role": "user",
+        "content": """
 {
   "prompt": "$prompt",
   "instructions: "$instructions",
 }
-"""}
+"""
+      }
     ]
   });
   var response = await http.post(Uri.parse(url), headers: headers, body: body);
@@ -41,12 +45,11 @@ Future<Map<String, dynamic>> _getCompletionFromOpenAI(
 }
 
 Future<Map<String, dynamic>> _getCalendarCompletion(
-  String apiKey,
-  String instructions,
-  String prompt,
-  String description,
-  DateTime date
-) async {
+    String apiKey,
+    String instructions,
+    String prompt,
+    String description,
+    DateTime date) async {
   var url = 'https://api.openai.com/v1/chat/completions';
   var headers = {
     'Content-Type': 'application/json',
@@ -56,12 +59,15 @@ Future<Map<String, dynamic>> _getCalendarCompletion(
     "model": "gpt-3.5-turbo",
     "messages": [
       {"role": "system", "content": instructions},
-      {"role": "user", "content": """
+      {
+        "role": "user",
+        "content": """
 {
   "prompt": "$prompt",
   "instructions: "$instructions",
 }
-"""}
+"""
+      }
     ]
   });
   var response = await http.post(Uri.parse(url), headers: headers, body: body);
